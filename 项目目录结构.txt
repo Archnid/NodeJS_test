@@ -1,0 +1,12 @@
+D:\my-fullstack-app\
+├── views/               # 存放 EJS 页面模板（前端页面）
+│   └── index.ejs
+├── public/              # 存放 CSS、JS、图片（静态资源）
+│   ├── style.css
+│   └── script.js
+├── routes/              # 后端路由（API 接口）
+│   └── api.js
+├── database/            # 存放 SQLite 数据库文件
+│   └── data.db
+├── app.js               # 入口文件
+└── package.json
