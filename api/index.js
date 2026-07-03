@@ -1,5 +1,12 @@
-const app = require('../app');
+const express = require('express');
+const apiRouter = require('../routes/api');
 
-// Vercel Serverless 入口
-// Vercel 会自动处理 HTTP 请求，不需要 listen()
+const app = express();
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+// 仅挂载 API 路由（页面由 Vercel 静态托管）
+app.use('/api', apiRouter);
+
 module.exports = app;
